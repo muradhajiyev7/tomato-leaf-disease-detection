@@ -38,17 +38,11 @@ The full training and final evaluation were performed in a high-performance comp
 
 ![Pipeline performance comparison](assets/pipeline_performance_comparison.png)
 
-![Accepted-only evaluation after final thresholding](assets/accepted_only_evaluation.png)
-
 ## System Pipeline
 
 Image input -> preprocessing -> EfficientNet classifier -> calibration -> test-time augmentation -> confidence/margin decision -> prediction result -> mobile app display
 
 ![Final full inference pipeline](assets/final_inference_pipeline.png)
-
-## Model Selection
-
-![Model selection journey](assets/model_selection_journey.png)
 
 ## Two-Stage Project Design
 
