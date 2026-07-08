@@ -36,15 +36,19 @@ The full training and final evaluation were performed in a high-performance comp
 | Accepted-case Macro-F1 | 94.62% |
 | Coverage | 96.71% |
 
+![Pipeline performance comparison](assets/pipeline_performance_comparison.png)
+
+![Accepted-only evaluation after final thresholding](assets/accepted_only_evaluation.png)
+
 ## System Pipeline
 
 Image input -> preprocessing -> EfficientNet classifier -> calibration -> test-time augmentation -> confidence/margin decision -> prediction result -> mobile app display
 
-![System pipeline](assets/architecture_diagram.svg)
+![Final full inference pipeline](assets/final_inference_pipeline.png)
 
-## Example Prediction View
+## Model Selection
 
-![Sample prediction](assets/sample_predictions.svg)
+![Model selection journey](assets/model_selection_journey.png)
 
 ## Two-Stage Project Design
 
@@ -86,7 +90,7 @@ Macro-F1 was used alongside accuracy because disease datasets can have class imb
 
 The model pipeline was connected to a mobile application for greenhouse testing. The mobile side used a Flutter frontend with Firebase integration, supporting a camera/upload workflow and a prediction result screen. Screenshots can be placed under `assets/mobile_app_screenshots/`.
 
-![Mobile app prediction screen](assets/mobile_app_screenshots/mobile_app_prediction_screen.svg)
+<img src="assets/mobile_app_screenshots/home_page_ui.jpg" alt="Mobile app home scan screen" width="360">
 
 ## How to Run
 
