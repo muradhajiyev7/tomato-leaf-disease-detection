@@ -36,7 +36,7 @@ Then update `MODEL_PATH` in `src/config.py`.
 - Generated outputs
 - Archives and compressed files
 - Private paths, credentials, API keys, and environment files
-- HPC runtime artifacts
+- Environment-specific runtime artifacts
 
 ## Using Notebooks
 

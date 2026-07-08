@@ -10,11 +10,11 @@ The model is intended to support tomato leaf disease screening from image inputs
 
 ## Dataset Summary
 
-The local project dataset contains 36K+ tomato leaf images organized into train, validation, and test splits. The public GitHub repository excludes the raw dataset because of size and distribution concerns.
+The local project dataset contains approximately 40K tomato leaf images organized into train, validation, and test splits. The public GitHub repository excludes the raw dataset because of size and distribution concerns.
 
 ## Training and Validation Setup
 
-Training and final evaluation were performed in a high-performance computing environment. The public repository keeps cleaned notebooks and modular source templates for transparency, but does not include checkpoints, trained weights, or HPC runtime artifacts.
+Training and final evaluation were performed in a high-performance computing environment. The public repository keeps cleaned notebooks and modular source templates for transparency, but does not include checkpoints, trained weights, or environment-specific runtime artifacts.
 
 ## Evaluation Metrics
 

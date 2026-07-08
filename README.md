@@ -1,16 +1,21 @@
 # Tomato Leaf Disease Detection System
 
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red)
+![Computer Vision](https://img.shields.io/badge/Task-Computer%20Vision-green)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 An end-to-end computer vision system for tomato leaf disease classification using PyTorch and EfficientNet, with calibration, test-time augmentation, confidence-based decision logic, and mobile app integration for greenhouse testing.
 
 ## Overview
 
 Tomato leaf diseases can reduce crop yield when they are detected late. This project explores how deep learning can support farmers, greenhouse operators, and agricultural teams by classifying tomato leaf conditions from images and returning confidence-aware predictions.
 
-The full training and final evaluation were performed in a high-performance computing environment. This public repository is a cleaned portfolio version: it includes documentation, notebooks, reusable code structure, and examples, but excludes the large raw dataset, trained model weights, checkpoints, and HPC-specific runtime artifacts.
+The full training and final evaluation were performed in a high-performance computing environment. This public repository is a cleaned portfolio version: it includes documentation, notebooks, reusable code structure, and examples, but excludes the large raw dataset, trained model weights, checkpoints, and environment-specific runtime artifacts.
 
 ## Key Highlights
 
-- 36K+ tomato leaf images across train, validation, and test splits
+- Approximately 40K tomato leaf images across training, validation, and test splits
 - EfficientNet-based classifier, with EfficientNet-B3 selected for the final disease model
 - 94.42% final test accuracy
 - 91.99% final macro-F1
@@ -34,6 +39,12 @@ The full training and final evaluation were performed in a high-performance comp
 ## System Pipeline
 
 Image input -> preprocessing -> EfficientNet classifier -> calibration -> test-time augmentation -> confidence/margin decision -> prediction result -> mobile app display
+
+![System pipeline](assets/architecture_diagram.svg)
+
+## Example Prediction View
+
+![Sample prediction](assets/sample_predictions.svg)
 
 ## Two-Stage Project Design
 
@@ -74,6 +85,8 @@ Macro-F1 was used alongside accuracy because disease datasets can have class imb
 ## Mobile Application
 
 The model pipeline was connected to a mobile application for greenhouse testing. The mobile side used a Flutter frontend with Firebase integration, supporting a camera/upload workflow and a prediction result screen. Screenshots can be placed under `assets/mobile_app_screenshots/`.
+
+![Mobile app prediction screen](assets/mobile_app_screenshots/mobile_app_prediction_screen.svg)
 
 ## How to Run
 
